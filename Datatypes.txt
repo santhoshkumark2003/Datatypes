@@ -24,38 +24,38 @@ Primitive:
                 *Symbol
                 *Null
 
-Number:
+    Number:
             *It’s used to represents a numeric values with or without decimals like float values.
             *Example: let age = 22; 
                       let pi = 3.14;  
 
-BigInt:
+    BigInt:
 	        *It’s used to represents a numeric value larger than the range of a `Number`.
 	        *Numbers have only the eight digit long like 12345678. So above eight digit numbers are stored using BigInt like Aadhar number or mobile number.
 	        * Example: let big = 123456789012345678;
 
-String:
+    String:
 	        *It’s used to represents a series of characters and is written with Double quotes or Single 
             Quotes.
             * Example: let name="santhosh";
 
 
-Boolean:
+    Boolean:
 	        *It’s used to represents a logical entity and can have only two values: `true` or `false`. 
 	        * Example: let isGuviStudent = true;
 		               let isNotGuviStudent = false;
 
-Undefined:
+    Undefined:
 	        *It’s used to represents a variable without a value, has the value undefined. 
              The type is also undefined.
 	        * Example: let x; (output is undefined.)
 
-Null:
+    Null:
 	        *It’s used to represents 'null' data type defines a value that represents nothing,
              or empty value.
 	        * Example: let car = null;(output is Null.)
 
-Symbol:
+    Symbol:
             *It’s a special datatype in ES 6.
 	        * It’s used to represents a unique value that is anonymous.
             * That means the privacy of the object.
@@ -89,7 +89,7 @@ Non Primitive:
                 *Array
                 *Function
 
-Object: 
+    Object: 
 	        *It’s used to represents a collection of data or a complex data structure.
 	        *It’s store a key value pairs.
 	        *Example:
@@ -97,14 +97,14 @@ Object:
                  person.age = 22;
                  console.log(person);
 
-Date:
+    Date:
 	        *It’s used to represents a point in time.
 	        *Example: 
                 let today = new Date();
                 today.setFullYear(2030);
                 console.log(today.getFullYear());
 
-Array:
+    Array:
 	        *It’s used to represents a list or sequence of data.
             *Array index starts from zero.
 	        *We can store any data type data in an single array.
@@ -116,7 +116,7 @@ Array:
                 console.log(fruits);
 
 
-Functions:
+    Functions:
 	        * It’s used to represents a reusable block of code.
 	        *We can add a method in our function
 	        *Example:
