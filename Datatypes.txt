@@ -1,0 +1,135 @@
+                                    DATA TYPE                 
+
+Definition:
+             1)Data types are types of data that is used to store in variable.
+             2)In Js Data types are classified into two types,
+             3)They are, *Primitive
+                                *Non Primitive
+
+
+
+
+Primitive:
+            *Primitive data types are known as immutable .
+            *Immutable means a value that can’t be change, Once a value is allocated.
+            *Primitive data types are used to store a single value like numbers, boolean ..,etc
+            *Primitive data types are classified into 7 types,
+            *They are,
+                *Number
+                *BigInt
+                *String 
+                *Boolean
+                *Undefined
+                *Symbol
+                *Null
+
+Number:
+            *It’s used to represents a numeric values with or without decimals like float values.
+            *Example: let age = 22; 
+                      let pi = 3.14;  
+
+BigInt:
+	        *It’s used to represents a numeric value larger than the range of a `Number`.
+	        *Numbers have only the eight digit long like 12345678. So above eight digit numbers are stored using BigInt like Aadhar number or mobile number.
+	        * Example: let big = 123456789012345678;
+
+String:
+	        *It’s used to represents a series of characters and is written with Double quotes or Single 
+            Quotes.
+            * Example: let name="santhosh";
+
+
+Boolean:
+	        *It’s used to represents a logical entity and can have only two values: `true` or `false`. 
+	        * Example: let isGuviStudent = true;
+		               let isNotGuviStudent = false;
+
+Undefined:
+	        *It’s used to represents a variable without a value, has the value undefined. 
+             The type is also undefined.
+	        * Example: let x; (output is undefined.)
+
+Null:
+	        *It’s used to represents 'null' data type defines a value that represents nothing,
+             or empty value.
+	        * Example: let car = null;(output is Null.)
+
+Symbol:
+            *It’s a special datatype in ES 6.
+	        * It’s used to represents a unique value that is anonymous.
+            * That means the privacy of the object.
+        Syntax,
+	        1)Creating a symbol
+              let symbolName = Symbol("description");
+            2)Using a symbol
+               let obj = {};
+               obj[symbolName] = "value";
+            *Example:  
+                let user = {
+                name: "Santhosh",
+                age: 22
+               };
+                let id = Symbol("id");
+                user[id] = 101;
+                console.log(Object.keys(user));
+                console.log(user[id]);   
+
+
+
+
+Non Primitive:
+            *Non primitive data types are known as mutable datatypes.
+            *Non primitive data types are complex data types that represent a collection of values.
+            *Non primitive data types values are changeable ,and also that’s hold a multiple data values like array,objects..,etc
+            *They are classified into 4 types,
+            *They are,
+                *Object
+                *Date
+                *Array
+                *Function
+
+Object: 
+	        *It’s used to represents a collection of data or a complex data structure.
+	        *It’s store a key value pairs.
+	        *Example:
+                 let person = { name: 'Santhosh',degree:'MCA'};
+                 person.age = 22;
+                 console.log(person);
+
+Date:
+	        *It’s used to represents a point in time.
+	        *Example: 
+                let today = new Date();
+                today.setFullYear(2030);
+                console.log(today.getFullYear());
+
+Array:
+	        *It’s used to represents a list or sequence of data.
+            *Array index starts from zero.
+	        *We can store any data type data in an single array.
+            *Example: 
+                let fruits = ['apple', 'banana'];
+                fruits.push('mango'); 
+                console.log(fruits);
+                fruits.pop();
+                console.log(fruits);
+
+
+Functions:
+	        * It’s used to represents a reusable block of code.
+	        *We can add a method in our function
+	        *Example:
+		        function add(a, b) {
+                return a + b;
+                }
+                add.desc = "This is a sum function";
+                add.multiply = function (a, b) {
+                return a * b;
+                };
+                console.log(add(2, 3));       
+                console.log(add.desc);        
+                console.log(add.multiply(2,3));
+
+
+
+
