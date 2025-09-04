@@ -3,8 +3,9 @@
 Definition:
              1)Data types are types of data that is used to store in variable.
              2)In Js Data types are classified into two types,
-             3)They are, *Primitive
-                                *Non Primitive
+             3)They are,    
+                            *Primitive
+                            *Non Primitive
 
 
 
