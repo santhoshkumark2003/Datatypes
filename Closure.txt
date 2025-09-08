@@ -1,0 +1,42 @@
+                                                Closures
+Definition
+	    Closures means if a parent function variable scope (or) a parent function is complete its execution  ,
+    still the child function can access the parent function variables.
+
+EX:
+
+function add(a)
+{
+    console.log(a);
+   
+    return function ab()
+   {
+    b=2;
+    return a+b;
+   }
+   
+   
+}
+let cl=add(2);
+console.log(cl());
+
+Explanation:
+
+    Step1: define a parent function function name add with a parameter a.
+
+    Step2: print a value of variable a and write a return statement 
+
+    Step3: the return statement is also a function that function name is ab without parameter 
+
+    Step4: write a return statement that performs the add function for the parent function
+           add variable a and ab function b variable.
+
+    Step5:create a variable for store a result of parent function that return a child function ,
+          so the parent function variable scope is completed so the variable value is erased by the compiler .
+
+    Step6:again we call the cl variable for ab function calling now the parent variable scope is finished, 
+          but still the value of variable a is stored, that is closure concept. \
+
+The output is 
+2
+4
