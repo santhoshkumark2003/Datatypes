@@ -1,4 +1,4 @@
-# This doucument contains the content of Datatypes in JavaScript.
+# This doucument contains the content of JavaScript.
 * Primitive
          *String
          *Number
@@ -11,3 +11,4 @@
          *Objects
          *Date
          *Functions
+* Closure
