@@ -1,0 +1,39 @@
+                               MRF(Map,Reduce,Filter)
+1)MAP:
+    Definition:
+        *Map() makes a new array. It changes every elements using a function.
+        *Original array will not affect.
+    Syntax:
+        array.map(function(element,index,array){});
+
+    Ex:
+        let num=[1,2,3,4,5,6,7,8];
+        let dbl=num.map(x=>x*2);
+        console.log(dbl);
+
+
+2)Reduce:
+    Definition:
+        *Reduce() change the array into a single value.
+        *Like sum,product,min,max.
+        *It is also not affect the original one .
+    Syntax:
+        array.reduce(function(total,crntvalue,crntindex,array),initialvalue);
+
+    Ex:
+        let num=[1,2,3,4,5,6,7,8];
+        let sum=num.reduce((total,crt)=>total+crt,0);
+        console.log(sum);
+
+
+3)Filter:
+    Definition:
+        *Filter() takes only the values that pass the given contions.
+        *It also gives a new array and not affect the original array.
+    Syntax:
+        array.filter(function(element,index,array));
+
+    EX:
+        let num=[1,2,3,4,5,6,7,8];
+        let even=num.filter(x=>x%2===0);
+        console.log(even); 
